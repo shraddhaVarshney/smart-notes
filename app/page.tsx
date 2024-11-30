@@ -36,7 +36,7 @@ export default function Home() {
   const stopListening = () => SpeechRecognition.stopListening();
 
   if (!browserSupportsSpeechRecognition) {
-    return alert("not supported");
+    return "not supported";
   }
 
 const generatePdf = (fileName:string)=>{
@@ -73,8 +73,6 @@ const generatePdf = (fileName:string)=>{
       {/* <a href="" id="a" onClick={CreateTextFile} className="flex gap-2 justify-center items-center">Copy to Clipboard</a> */}
       {/* <script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="> </script> */}
 </section>
-
-
 <AlertDialog open={open}>
   {/* <AlertDialogTrigger>Open</AlertDialogTrigger> */}
   <AlertDialogContent className="bg-white">
