@@ -57,7 +57,7 @@ const generatePdf = (fileName:string)=>{
   return (
     <section className="w-full flex justify-center text-black  flex-col gap-2 items-center p-5 ">
        {/* <section className="w-full flex items-center justify-center p-3 font-bold text-[20px]">Your Notes</section> */}
-      <div className="min-h-[300px] max-sm:w-full rounded-md bg-white border-black sm:w-full md:w-full lg:w-[60%] shadow-lg p-3 border text-black">{transcript}</div>
+      <div className="min-h-[300px] max-h-[300px] overflow-y-auto max-sm:w-full rounded-md bg-white border-black sm:w-full md:w-full lg:w-[60%] shadow-lg p-3 border text-black">{transcript}</div>
       <section className="w-full flex flex-row justify-center items-center gap-2 flex-wrap">
       <Button onClick={()=>{
         setToggleMic(prev => !prev)

@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} flex flex-col h-[100vh] ${geistMono.variable} antialiased`}
       >
-        <div className="w-full flex justify-center items-center font-bold text-[35px] bg-green-600 text-white px-3 py-0.5">Smart Notes</div>
+        <div className="w-full flex justify-center items-center font-bold text-[35px] bg-[#B6A28E] text-white px-3 py-0.5">Smart Notes</div>
        <div className="w-full">{children}</div>
       </body>
     </html>

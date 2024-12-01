@@ -9,5 +9,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/bg1.jpg");
+  background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    background-size: cover;
   @apply bg-gray-200
 }
